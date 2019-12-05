@@ -1,0 +1,53 @@
+[
+	  { "name": "suwako", 					"from": "touhou"},
+	  { "name": "reimu",  					"from": "touhou"},
+	  { "name": "flandre scarlet",  "from": "touhou"},
+    
+	  { "name": "if",     				"from": "neptunia"},
+	  { "name": "iffy",   				"from": "neptunia"},
+	  { "name": "compa",  				"from": "neptunia"},
+    
+	  { "name": "sawako", 					"from": "k-on" 	},
+	  { "name": "mio",    					"from": "k-on" 	},
+	  { "name": "tsumugi",					"from": "k-on"	},
+	  { "name": "ritsu",  					"from": "k-on" 	},
+	  { "name": "yui",    					"from": "k-on" 	},
+	  { "name": "azusa",  					"from": "k-on" 	},
+	  { "name": "ui",     					"from": "k-on" 	},
+    
+	  { "name": "yuri",   					"from": "ddlc" 	},
+	  { "name": "natsuki",					"from": "ddlc" 	},
+	   
+	  { "name": "jonesy",					 "from": "fornite"},
+	  { "name": "ninja", 				   "from": "fornite"},
+	  { "name": "keanu reeves",    "from": "fornite"},
+    
+	  { "name": "konata", 		 "from": "lucky star" },
+	  { "name": "miyuki", 		 "from": "lucky star" },
+	  { "name": "nanako", 		 "from": "lucky star" },
+	  { "name": "tsukasa",		 "from": "lucky star" },
+	  { "name": "kagami", 	   "from": "lucky star" },
+    
+	  { "name": "taiga",		     "from": "toradora" },
+	  { "name": "nozomi",       "from": "love-live" },
+		
+		{ "name": "uchiha sasuke",		"from": "naruto"},
+		{ "name": "itachi uchiha",		"from": "naruto"},
+    
+		{ "name": "obama", 								 "from": "" },
+		{ "name": "mercy",     		 "from": "overwatch"},
+		{ "name": "john f kennedy", 			 "from": "" },
+		{ "name": "kenny mcormick","from":"south park"},
+	  { "name": "404", 	     				 "from": "error"},
+	  { "name": "johnny test", 				 		"from": ""},
+		{ "name": "johnny sins", 						"from": ""},
+	  { "name": "pingu",		 							"from": ""},
+	  { "name": "vector", 	 "from": "dispicable me"},
+	  { "name": "jeff kaplan", 	 "from": "overwatch"},
+	  { "name": "todd howard", 	  "from": "bethesda"},
+	  { "name": "speedwagon",  				"from": "jojo"},
+	  { "name": "steve",         "from": "minecraft"},
+	  { "name": "colonel sanders",     "from": "kfc"}
+		
+		
+]

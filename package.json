@@ -1,0 +1,63 @@
+{
+  "name": projectname,
+  "version": "1.0.0",
+  "main": "index.js",
+  "token": token,
+  "prefix": prefix,
+  "path": directory,
+  "link": "https://discordapp.com/oauth2/authorize?client_id=571249343403786250&permissions=8&redirect_uri=https://discordapp.com/api/oauth2/authorize%3Fclient_id%3D571249343403786250%26permissions%3D67177536%26redirect_uri%3Dhttps%253A%252F%252Fdiscordapp.com%252Fapi%252Foauth2%252Fauthorize%253Fclien&scope=bot",
+  "log": please up in your log file,
+  "gypfile": true,
+  "activity": {
+    "listening": [
+      "birds",
+      "Touhou Music!"
+    ],
+    "playing": [
+      "with you",
+      "with a Bass!"
+    ],
+    "watching": [
+      "a movie",
+      "you"
+    ]
+  },
+  "emoji": {
+    "waiting": "583901053309943809",
+    "tpose": "583900931234594836",
+    "merry": "583900408259280906",
+    "laugh": "583900164943511553",
+    "mad": "583899915663704064",
+    "angry": "574246220201984032",
+    "happy": "574246064866197514"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "compile": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.3",
+    "common-tags": "^1.8.0",
+    "compile-run": "^2.3.1",
+    "discord-leveling": "^1.0.3",
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^7.0.0",
+    "escape-string-regexp": "^2.0.0",
+    "ffmpeg": "0.0.4",
+    "ffmpeg-binaries": "^4.0.0",
+    "libsodium": "^0.7.5",
+    "napi": "0.0.0",
+    "opusscript": "0.0.6",
+    "request": "^2.88.0",
+    "require-all": "^3.0.0",
+    "rule34": "^1.0.0",
+    "yarn": "^1.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
