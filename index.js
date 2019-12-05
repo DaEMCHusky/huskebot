@@ -48,29 +48,22 @@ const lastUpdate = `${uTD}/${uTM}/${uTQ} ${uTH}:${uTX}:${uTY}.${uTZ}`;
 client.on('ready', (msg) => {
 	console.log(`Logged in as ${client.user.tag}!`);
 	run("s",'Status',client,pack);
-	// client.fetchUser('308113331162578956').then(user => {user.send("JIM HANG")}).catch(console.error);
-	// run("s",'huskelogs',client,'','','','start');
-	// client.channels.get('552762688304840716').send(":moderatepain:");
 });
 
 // when client gets an error
 client.on("error", (error) => {
-	client.channels.get('608643214685241375').send(`error ${error}`);
+	// client.channels.get().send(`error ${error}`);
 	console.error(error);
 });
 
 // when client tries to reconnect
 client.on("reconnecting", function(){
-    console.log(`Connecting as huskeBot#6719`);
+    console.log(`Reconnecting`);
 });
 
 client.on('message', msg => {
-	if (msg.author.bot || msg.channel.type == "dm" || msg.system || msg.channel.id == '552765019297677322')
+	if (msg.author.bot || msg.channel.type == "dm" || msg.system)
         return;
-	var MsgChannel = client.channels.get('610978265842057226');
-	MsgChannel.send(`**${msg.author.tag} (${msg.author.id})** <#${msg.channel.id}>, ${msg.content}`);
-	
-	run("s",'swear',client,msg,'',msg.content,'');
 	
 	if (msg.content.startsWith(pack.prefix)) {
 		let msgA = msg.content.split(/\s+/g);
