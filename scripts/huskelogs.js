@@ -12,13 +12,9 @@ module.exports.run = (client,msg,newmsg,args,condition,pack) => {
 	var uTZ = uT.getMilliseconds();
 	let time = `(${uTD}/${uTM}/${uTQ} ${uTH}:${uTX}:${uTY}.${uTZ})`;
 	
-	let servers = [
-		'608643214685241375', // huskebotemotes
-		'589270106216071180', // school server
-	];
+	let servers = [];
 	if (condition == 'start') {
 		for (i = 0; i < servers.length; i++) { 
-		
 			client.channels.get(servers[i]).send({embed:{
 				color: 10359183,
 				fields:[{
@@ -26,7 +22,7 @@ module.exports.run = (client,msg,newmsg,args,condition,pack) => {
 					value:`HuskeBot#6719 started up at: ${time}`
 				}],
 				author:{
-					name:"huskeBot#6719",
+					name:client.user.username,
 					icon_url:`${client.user.avatarURL}`
 				}
 			}}).then().catch();
@@ -39,7 +35,7 @@ module.exports.run = (client,msg,newmsg,args,condition,pack) => {
 			color: 10359183,
 			description:`I joined ${msg.name} (${msg.id})`,
 			author:{
-				name:"huskeBot#6719",
+				name:client.user.username,
 				icon_url:`${client.user.avatarURL}`
 			}
 		}});
@@ -50,7 +46,7 @@ module.exports.run = (client,msg,newmsg,args,condition,pack) => {
 			color: 10359183,
 			description:`I got kicked from ${msg.name} (${msg.id})`,
 			author:{
-				name:"huskeBot#6719",
+				name:client.user.username,
 				icon_url:`${client.user.avatarURL}`
 			}
 		}});
@@ -93,20 +89,6 @@ module.exports.run = (client,msg,newmsg,args,condition,pack) => {
 	var logging = msg.guild.channels.find("name", "huskelogs");
 	if (!logging) msg.guild.createChannel("huskelogs");
 	logging = msg.guild.channels.find("name", "huskelogs");
-	
-	for (var i = 0; i < msgCnt.length; i++) {
-		for (var j = 0; j < pack.blklist.length; j++) {
-			msgCnt
-				.split(pack.blklist[j])
-				.join("<bad word>");
-			if (nmsgCnt) {
-				nmsgCnt
-					.split(pack.blklist[j])
-					.join( "<bad word>");
-			}
-		}
-		
-	}
 	
 	if (condition == 'edit') {
 		if (newmsg.content === msg.content) return;
